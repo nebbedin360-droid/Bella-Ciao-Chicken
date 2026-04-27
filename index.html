@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bella Ciao Chicken</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth}
+    body{background:#fff;color:#111;line-height:1.6}
+    img{max-width:100%;display:block}
+    a{text-decoration:none}
+    .container{width:90%;max-width:1200px;margin:auto}
+
+    header{position:fixed;top:0;left:0;width:100%;background:#fff;box-shadow:0 2px 15px rgba(0,0,0,.08);z-index:1000}
+    nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+    .logo{display:flex;align-items:center;gap:12px;font-size:28px;font-weight:800;color:#c1121f}
+    .logo img{width:55px;height:55px;object-fit:contain}
+    .nav-links{display:flex;gap:28px}
+    .nav-links a{color:#c1121f;font-weight:600}
+
+    .hero{padding-top:130px;min-height:100vh;display:flex;align-items:center;background:linear-gradient(to right,#fff8e1,#ffffff)}
+    .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+    .hero h1{font-size:58px;line-height:1.1;color:#c1121f}
+    .hero h1 span{color:#f4b400}
+    .hero p{margin:20px 0;font-size:18px}
+    .btns{display:flex;gap:16px;flex-wrap:wrap}
+    .btn{padding:14px 26px;border-radius:10px;font-weight:700;display:inline-block;transition:.3s}
+    .call-btn{background:#f4b400;color:#111}
+    .telegram-btn{background:#0088cc;color:#fff}
+    .btn:hover{transform:translateY(-3px)}
+    .hero-img img{border-radius:22px;box-shadow:0 20px 40px rgba(0,0,0,.12)}
+
+    section{padding:90px 0}
+    h2.section-title{text-align:center;font-size:42px;color:#c1121f;margin-bottom:15px}
+    .section-sub{text-align:center;max-width:760px;margin:0 auto 50px}
+
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+    .card{background:#fff;border:2px solid #f4b400;border-radius:18px;overflow:hidden;box-shadow:0 10px 25px rgba(0,0,0,.05)}
+    .card img{height:220px;object-fit:cover}
+    .card-content{padding:20px}
+    .card h3{color:#c1121f;margin-bottom:10px}
+
+    .story{background:#fff8e1}
+    .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+    .highlight{color:#c1121f;font-weight:700}
+
+    .map iframe{width:100%;height:450px;border:0;border-radius:20px}
+
+    footer{background:#c1121f;color:#fff;padding:40px 0;text-align:center}
+    footer a{color:#f4b400;font-weight:700}
+
+    @media(max-width:768px){
+      .hero-grid,.story-grid{grid-template-columns:1fr}
+      .hero h1{font-size:40px}
+      .nav-links{display:none}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <img src="logo.png" onerror="this.style.display='none'" alt="logo">
+        Bella Ciao Chicken
+      </div>
+      <div class="nav-links">
+        <a href="#menu">Menu</a>
+        <a href="#story">Experience</a>
+        <a href="#location">Location</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h1>Taste the <span>Heist</span><br>Feel the Flavor</h1>
+      <p>Inspired by the iconic Money Heist energy, Bella Ciao brings bold burgers, signature pizzas, crispy chicken, and unforgettable presentation to the heart of Addis Ababa.</p>
+      <div class="btns">
+        <a href="tel:0904111777" class="btn call-btn">Call Now</a>
+        <a href="https://t.me/bellaciaochicken" target="_blank" class="btn telegram-btn">Telegram Order</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=1200&q=80" alt="Money Heist Inspired Hero">
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="container">
+    <h2 class="section-title">Signature Favorites</h2>
+    <p class="section-sub">From juicy burgers to handcrafted pizzas and crispy fried chicken, every dish is made to create a memorable dining and delivery experience.</p>
+
+    <div class="cards">
+      <div class="card">
+        <img src="burger-special.jpg" onerror="this.style.display='none'" alt="burger">
+        <div class="card-content">
+          <h3>Bella Burger</h3>
+          <p>Rich flavor, soft buns, and satisfying layers built for true burger lovers.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="pizza-signature.jpg" onerror="this.style.display='none'" alt="pizza">
+        <div class="card-content">
+          <h3>Signature Pizza</h3>
+          <p>Fresh toppings, balanced flavor, and a warm oven finish made for sharing.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="fried-chicken.jpg" onerror="this.style.display='none'" alt="chicken">
+        <div class="card-content">
+          <h3>Golden Fried Chicken</h3>
+          <p>Crispy outside, tender inside—prepared for comfort and flavor in every bite.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="story" id="story">
+  <div class="container story-grid">
+    <div>
+      <img src="special-packaging.jpg" onerror="this.style.display='none'" alt="packaging">
+    </div>
+    <div>
+      <h2 class="section-title" style="text-align:left">More Than Food</h2>
+      <p>Bella Ciao stands out not only for its bold theme, but for the full customer experience. Smart packaging keeps food warm, buns soft, and every delivery fresh from kitchen to doorstep.</p>
+      <br>
+      <p>The restaurant atmosphere reflects creativity and personality, but the real goal is simple: <span class="highlight">great food with a memorable experience</span>. Style matters—but taste matters more.</p>
+    </div>
+  </div>
+</section>
+
+<section id="location" class="map">
+  <div class="container">
+    <h2 class="section-title">Find Us</h2>
+    <p class="section-sub">Cameroon St, Addis Ababa — visit us and enjoy the full Bella Ciao experience.</p>
+    <iframe src="https://www.google.com/maps?q=Cameroon%20St,%20Addis%20Ababa&output=embed" allowfullscreen loading="lazy"></iframe>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="container">
+    <h2>Bella Ciao Chicken</h2>
+    <p>Phone: 090 411 1777</p>
+    <p>Telegram: @bellaciaochicken</p>
+    <p style="margin-top:18px">Made by <a href="#">Nebbedin Website Development</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
